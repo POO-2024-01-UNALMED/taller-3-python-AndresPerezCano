@@ -37,7 +37,7 @@ class Control:
     def enlazar(self, tv):
         self._tv = tv
         if self._tv != None:
-            self._tv.control = self
+            self._tv.control(self)
 
     def getTv(self):
         return self._tv
